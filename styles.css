@@ -1,0 +1,216 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  color: #23c483;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  /* background: #007bff; */
+  /* color: #fff; */
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  /* background: #0056b3; */
+}
+
+/* From Uiverse.io by cssbuttons-io */
+#add-investment-btn {
+  display: block;
+  margin: 12px auto;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.531);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#add-investment-btn:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+#investment-list-container {
+  /* margin-top: 20px; */
+  /* background-color: #dc3545; */
+}
+
+#investment-list-container h3 {
+  background-color: #23c483;
+  padding: 15px;
+}
+
+#investment-list {
+  list-style: none;
+
+  padding: 0;
+  /* background-color: #ddd; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#investment-list li {
+  display: inline-block;
+  width: 250px;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 10px;
+  background: #f9f9f9;
+  margin: 10px;
+  border: 1px solid #3f3737;
+  border-radius: 5%;
+  /* margin-right: 10px; */
+}
+
+#investment-list li div span {
+  font-weight: bold;
+}
+
+#investment-list li .btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+#investment-list li .updatebtn {
+  background: #23c483;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  /* margin-right: 10px; */
+}
+
+#investment-list li .removebtn {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  /* margin-right: 10px; */
+}
+
+#investment-list li .asset-name {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* #investment-list li button:hover {
+  background: #c82333;
+} */
+
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+  /* margin: 20px; */
+}
+
+.close-btn:hover {
+  background: #c82333;
+}
+
+.form-title {
+  margin-top: 30px;
+}
+
+.modal {
+  width: 500px;
+  max-width: 70%;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.modal.active {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 10px;
+  font-size: 16px;
+  background: #23c483;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #f8f9fa;
+  color: #19d187;
+  border: 1px solid black;
+}
+
+#portfolio-chart-container {
+  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}

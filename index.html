@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Portfolio Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Investment Portfolio Tracker</h1>
+      <hr />
+      <div id="dashboard">
+        <h2>Total Portfolio Value: Rs. <span id="total-value">0</span></h2>
+        <button id="add-investment-btn">Add New Investment</button>
+        <div id="investment-list-container">
+          <h3>Investment List</h3>
+          <ul id="investment-list"></ul>
+        </div>
+
+        <div id="portfolio-chart-container" style="display: none">
+          <canvas id="portfolio-chart"></canvas>
+        </div>
+      </div>
+
+      <div id="add-investment-form" class="modal">
+        <form id="investment-form">
+          <h2 class="form-title">Add New Investment</h2>
+          <button class="close-btn" onclick="closeForm('add-investment-form')">
+            X
+          </button>
+          <input
+            type="text"
+            id="asset-name"
+            placeholder="Asset Name"
+            required
+          />
+          <input
+            type="number"
+            id="investment-amount"
+            placeholder="Amount Invested"
+            required
+          />
+          <input
+            type="number"
+            id="current-value"
+            placeholder="Current Value"
+            required
+          />
+          <button type="submit">Add Investment</button>
+        </form>
+      </div>
+
+      <div id="update-investment-form" class="modal">
+        <h2 class="form-title">Update Investment</h2>
+        <button class="close-btn" onclick="closeForm('update-investment-form')">
+          X
+        </button>
+        <form id="update-form">
+          <input type="text" id="update-asset-name" disabled />
+          <input type="number" id="update-investment-amount" disabled />
+          <input type="number" id="update-current-value" required />
+          <button type="submit">Update Investment</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
